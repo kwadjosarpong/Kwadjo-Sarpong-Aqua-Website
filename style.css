@@ -1,0 +1,564 @@
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  /*margin: 10% auto;*/
+  max-width: 600px;
+  padding: 20px;
+  background-color: white; /* update the colors and font sizes as you like */
+  color: black;
+  font-family: SF Pro, sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+}
+
+/* image of modal content */
+/*.modal-content img{
+
+}*/
+
+.modal-content img:hover {
+transform: none;
+box-shadow: none;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalButton{
+  background-color: transparent;
+  color: #007bff;  /* Black text */
+  border: none;
+  padding: 5px;
+  border-radius: 50%; /* Round corners */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: black;
+  font-family: SF Pro, sans-serif;
+  margin: 0%;
+  padding: 0;
+}
+
+h1 {
+  font-family: BlinkMacSystemFont, sans-serif;
+  letter-spacing: 1px;
+  line-height: 3;
+
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  line-height: 3;
+
+}
+
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  line-height: 2;
+  word-spacing: 3px;
+}
+
+button {
+  font-family: Oxygen, Ubuntu, Cantarell;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #007AFF;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+
+}
+
+li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  letter-spacing: 1px;
+  line-height: 1.5;
+
+}
+
+.spacing {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0px;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin: 50px 0px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img:hover {
+  transform: scaleX(1.05);
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#logo {
+  border-radius: 8px;
+  width: auto;
+  height: 20px;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#logo:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+figcaption {
+  width: 100%;
+  font-style: italic;
+}
+
+video {
+  margin: 30px;
+}
+
+#title {
+  letter-spacing: 2px;
+  line-height: 1;
+  font-size: 50px;
+}
+
+#body {
+  margin: 5%;
+  padding: 3em;
+}
+
+.nava {
+  list-type-style: none;
+  background-color: #f2f2f2;
+  text-align: left;
+  color: black;
+  padding: 0;
+  margin: 0%;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+
+}
+
+.nava a {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  text-align: center
+}
+
+.nava a:hover {
+  background-color: #77b8fd;
+  color: black;
+}
+
+.nava li {
+  display: inline-block;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 1px;
+  z-index: 10;
+
+}
+
+.header-box {
+  height: 600px;
+  background-color: #f2f2f2;
+  margin: 0%;
+  margin-top: 15px;
+  background: url('img/aquaponicsGarden.png');
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.header-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0%;
+  color: #ffffff
+}
+
+.header-buttons,
+#buttonSubmit {
+  font-family: -apple-system, BlinkMacSystemFont;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007AFF;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons:hover,
+#buttonSubmit:hover {
+  background-color: #3e8e41;
+}
+
+#headliner {
+  color: black;
+  text-align: left;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: auto;
+  align-items: stretch;
+  background-color: white;
+}
+
+.header-container-box {
+  width: auto;
+  position: relative;
+  margin: 1%;
+  border-radius: 25px;
+  background-color: #cccccc;
+  height: 20rem;
+  width: 100rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.header-container-text-block {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: white;
+  font-size: 20px;
+}
+
+.header-container-img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.header-container-box:hover {
+  transform: scale(0.85);
+  box-shadow: none;
+}
+
+.header-container-img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.checklist {
+  font-size: 15px;
+  text-align: left;
+  list-style-type: none;
+  padding-left: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  background-color: white;
+  margin-bottom: 50px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#checkbox-title {
+  text-align: center;
+  background-color: #007AFF;
+  margin: 0;
+  height: 30px;
+  font-size: 25px;
+  padding: 1rem;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+#news {
+  background-image: url(/img/newsBackground.png);
+  width: 100%;
+  margin: 0;
+}
+
+.articles,
+article {
+  text-align: left;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 0;
+  color: grey;
+  margin-top: 5%;
+  border: 0;
+  padding: 5%;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+
+.articles h5 {
+  font-family: "San Francisco", "Segoe UI", Roboto;
+  font-size: 1.5rem;
+}
+
+.articles p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+.article-link:hover,
+.article-link:visited,
+.article-link:link {
+  color: grey;
+}
+
+.article-link:visited {
+  color: #b166cc;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 5%;
+}
+
+.news-box {
+  padding: 10px;
+  width: auto;
+  height: auto;
+  font-size: 8em;
+  row-gap: 4em;
+  border-radius: 15px;
+  background-color: white;
+  opacity: 65%;
+  margin: 10px;
+}
+
+.news-box:hover {
+  background-color: white;
+  opacity: 100%;
+
+}
+
+#form {
+  margin: 0;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 30px;
+  margin-right: 5%;
+  border-radius: 25px;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 60%;
+}
+
+.formContainer p {
+  font-size: .75em;
+  color: #77b8fd;
+  cursor: pointer;
+}
+
+.signatures {}
+
+.formContainer img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formContainer img:hover {
+  box-shadow: none;
+}
+
+input {
+  border: 1px solid;
+  border-radius: 15px;
+  border-color: #818181;
+  border-width: 2px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 65%;
+
+}
+
+input:focus {
+  border-color: #007AFF;
+  outline: none;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.dark-mode {
+  background-color: #161618;
+  color: #818181;
+}
+
+#theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+  margin-left: 50px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.#theme-switch input {
+  display: none
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(20px);
+}
+
+.error {
+  border: 2px solid #d9534f;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#reduceMotionButton {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.off {
+  background-color: grey;
+  box-shadow: none;
+}
+
+.on {
+  background-color: #77b8fd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) inset;
+
+}

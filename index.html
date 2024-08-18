@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Aquaponics</title>
+  <link rel="icon" type="image/png" href="img/fishP.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="thanks-modal" class="modal">
+
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <img id="modalImage" src="/img/faceID.png" alt="splash of water" width="150">
+        <p id="thanks-modal-content">Your response has been recorded and this page has been updated. Please refresh the
+          page to get the latest version. You will not be able to use the page until you refresh</p>
+        <button id="modalButton">Refresh</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="navbar active">
+    <ul class="nava">
+      <li><span><img src="img/fishP.png" alt="logo" id="logo"></span></li>
+      <li><a href="#title">Home</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#checklist-anchor">Checklist</a></li>
+      <li><a href="#reading">Readings</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#form">Signup</a></li>
+      <li><button id="reduceMotionButton" type="button">Fast</button>
+      </li>
+      <li>
+        <label id="theme-switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+  <div class="header-box active">
+    <div class="header-text">
+      <h1 id="title">AQUAPONICS SETUP</h1>
+      <p>Let's meet in the middle of fish and plants!</p>
+      <div>
+        <span>
+          <a href="https://www.youtube.com/results?search_query=learn+aquaponics">
+            <button class="header-buttons">Tutorials</button>
+          </a>
+        </span>
+        <span>
+          <a href="https://aquaponics.com/product-category/aquaponic-growing-supplies/">
+            <button class="header-buttons">Buy Products</button>
+          </a>
+        </span>
+      </div>
+      <div>
+        <video width="500" controls autoplay muted>
+          <source src="aquaponicsVideo.mp4" type="video/mp4">
+          <source src="aquaponicsVideo.mp4" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="revealable">
+    <h2 id="headliner">The Latest.<span style="color:gray"> Innovations and Hot items <span></h2>
+  </div>
+  <div class="header-container revealable">
+    <div class="header-container-box revealable" style="background-image: url('img/aquaponicsSub.png');">
+      <div class="header-container-text-block">
+        <h4>Farming Systems</h4>
+      </div>
+    </div>
+    <div class="header-container-box revealable" style="background-image: url('img/aquaponicsScuba.png');">
+      <div class="header-container-text-block">
+        <h4>Automated Feeding</h4>
+      </div>
+    </div>
+    <div class="header-container-box revealable" style="background-image: url('img/aquaponicsPlants.png');">
+      <div class="header-container-text-block">
+        <h4>Smart Sensors</h4>
+      </div>
+    </div>
+  </div>
+  <div id="body" class="revealable">
+    <h2 id="summary">Summary</h2>
+    <p>In summary, aquaponics is a new method of farming foods without the use of pesticides and other harmful
+      chemicals. It utilizes the symbiotic relationship between fish and plants. Fish waste provides plants with
+      nutrients, while the plants filter water fish inhabit</p>
+    <a href="aquaponicsFlowchart.jpg" alt="flowchart of aquaponics system">
+      <img src="img/aquaponicsFlowchart.jpg" alt="Image of Aquaponics Flowchart" width=400px;>
+    </a>
+    <figcaption>Steps 1-6 for a completely functional aquaponics system.</figcaption>
+    <div class="spacing"><br><br><br><br></div>
+    <h3 id="checklist-anchor">What You'll Need</h3>
+    <ul id="checkbox-title">Checklist</ul>
+    <div class="checklist">
+      <li class="revealable">Fish Tank
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Fish
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Water Filter
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Grow Bed
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Grow Media
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Seeds
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Water Pump
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">Air Pump
+        <span class="checkmark"></span>
+      </li>
+      <li class="revealable">More Below</li>
+    </div>
+    <a href="supplies.png" alt="supplies for aquaponics" class="revealable">
+      <img src="img/supplies.png" alt="list of aquaponics supplies">
+    </a>
+    <figcaption class="revealable">Images of all supplies needed to begin crafting your own aquaponics system.
+    </figcaption>
+    <div class="spacing"><br><br><br><br></div>
+    <div id="reading" class="revealable">
+      <h3 class="revealable">History</h3>
+      <p class="revealable">As previously mentioned, aquaponics is a new method of farming. What you may not know is
+        that the term was
+        introduced in the 1970s. There is still no consensus on which culture or people first used it, the Mayans or
+        Aztecs. Nevertheless, the Aztecs basically built their own aquaponics system on top of their lakes and bodies of
+        water. Later it was popularized in Southeast Asia to grow rice in which the plants could be easily fertilized.
+        Approaching the 20th Century, North Carolina State University developed the first commercial aquaponics facility
+        in Massachusetts. The practice continues to thrive being widely adopted in Australia, Canada, and the United
+        States. </p>
+      <div class="spacing"><br><br><br><br></div>
+      <h3 class="revealable">Why is aquaponics necessary?</h3>
+      <p class="revealable">Aquaponics is essential because it deals with addressing human rights issues such as the
+        eradication of hunger.
+        Many areas of every city and countries are <a href="https://www.dictionary.com/browse/food-desert">food
+          deserts</a>. It essentially means locals cannot access fresh fruits and vegetables. It may spiral into
+        unhealthy eating behaviors and habits since the main stakeholders are residents, students, and workers.
+        According to a study by <a
+          href="https://www.ajmc.com/view/diabetes-prevalence-expected-to-double-globally-by-2050">The American Journal
+          of Managed Care</a>, over 500 million people live with diabetes and it is expected to be in the billions by
+        2050. Having an aquaponics system in your backyard or college campus can help alleviate this issue.</p>
+      <div class="spacing"><br><br><br><br></div>
+      <h3 class="revealable">Relation to Environment</h3>
+      <p class="revealable">You may be thinking what is the problem why is aquaponics more sustainable than current
+        farming methods?</p>
+      <ol>
+        <li class="revealable">Water usage</li>
+        <p class="revealable">In a closed system, the water is reused and recycled over and over because it basically,
+          is self-cleaning.
+          Alternatively, farming methods require generating and producing a lot of water because the water may run off.
+          This is not sustainable.</p>
+        <li class="revealable">Collateral Chemicals</li>
+        <p class="revealable">It is no secret farmers use boatloads of pesticides, fertilizers, and other chemicals to
+          farm. In Aquaponics
+          water is filtered by plants which leaves no need for chemicals. Furthermore, it means that aquaponics farming
+          does not damage our freshwater supply or runoff into bodies of water</p>
+        <li class="revealable">No Soil Degredation</li>
+        <p class="revealable">Current farming methods destroy natural landscapes, perpetuate deforestation, and degrade
+          soil. Aquaponics
+          does not require any soil for growth in return keeping biodiversity intact. </p>
+      </ol>
+    </div>
+  </div>
+  <br> <br> <br> <br> <br> <br>
+  <div id="news">
+    <article class="articles revealable">
+      <h4></h4>
+      <div class="news-container revealable">
+        <div class="news-box revealable">
+          <h5><a href="https://www.securities.io/aquaponics/" class="article-link revealable">Aquaponics – Everything
+              You Need to
+              Know</a></h5>
+          <p><a href="https://www.securities.io/aquaponics/" class="article-link revealable">A short and broad view of
+              aquaponics
+              in modern society</a></p>
+        </div>
+        <div class="news-box revealable">
+          <h5><a
+              href="https://www.weareiowa.com/video/news/special-reports/the-big-story/524-b3e947fb-5ce1-41c6-8b6b-d1d37d988f99"
+              class="article-link revealable">Aquaponic farm uses fish to grow fruits and vegetables
+            </a></h5>
+          <p><a
+              href="https://www.weareiowa.com/video/news/special-reports/the-big-story/524-b3e947fb-5ce1-41c6-8b6b-d1d37d988f99"
+              class="article-link revealable">It may be time to build your very own backyard aquaponics garden
+            </a></p>
+        </div>
+        <div class="news-box revealable">
+          <h5><a href="https://www.statenews.org/news/2023-09-12/could-ohio-become-a-fish-state-researchers-hope-so"
+              class="article-link revealable">Could Ohio become a fish state? Researchers hope so
+            </a></h5>
+          <p><a href="https://www.statenews.org/news/2023-09-12/could-ohio-become-a-fish-state-researchers-hope-so"
+              class="article-link revealable">Get the inside scoop on the latest in Ohio agriculture production and GDP
+            </a></p>
+        </div>
+        <div class="news-box revealable">
+          <h5><a href="https://www.theguardian.com/environment/2023/sep/07/oko-farms-brooklyn-aquaponics-fish"
+              class="article-link revealable">They’re sentient beings: a new way of raising fish – and vegetables – in
+              New
+              York</a>
+          </h5>
+          <p><a href="https://www.theguardian.com/environment/2023/sep/07/oko-farms-brooklyn-aquaponics-fish"
+              class="article-link revealable">See how one of the most populated states in America are becoming
+              involved</a>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div id="form">
+    <div class="formContainer revealable">
+      <form id="sign-petition">
+        <img src="/img/fishP.png" width="100">
+        <h2>Sign Up Newsletter</h2>
+        <div>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        </div>
+        <br>
+        <div>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div>
+          <input type="email" id="email" name="email" placeholder="E-Mail" required>
+        </div>
+        <br>
+        <div>
+          <input type="number" id="telephone" name="telephone" placeholder="Phone Number" required>
+        </div>
+        <br>
+        <div>
+          <input type="date" id="birthday" name="birthday" value="1999-01-01" required>
+        </div>
+        <br>
+        <div>
+          <button type="button" id="buttonSubmit">Submit</button>
+        </div>
+        <div class="bottomFormText">
+          <p>Stay Updated with the Latest News on Innovative Aquaponics Breakthroughs and Discoveries</p>
+          <p id="counter">🖊️ 3 people have signed this petition and support this cause."</p>
+        </div>
+      </form>
+    </div>
+    <div>
+      <h2>Special Shoutout</h2>
+      <div class="signatures">
+
+      </div>
+    </div>
+  </div>
+
+  <br> <br> <br>
+  <footer>
+    <p>Copyright &copy; 2024</p>
+    <p>Author:Kwadjo Sarpong<br>
+      <a href="mailto:kwadjosarpong@gmail.com">Contact via Mail</a>
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
