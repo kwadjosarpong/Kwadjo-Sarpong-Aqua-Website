@@ -4,7 +4,6 @@ This project showcases an interactive and educational website designed to highli
 
 [View Project](https://kwadjosarpong.github.io/Kwadjo-Sarpong-Aqua-Website/)
 
----
 
 ## Objectives
 - Create an engaging, visually appealing website that represents an aquaponics system  
