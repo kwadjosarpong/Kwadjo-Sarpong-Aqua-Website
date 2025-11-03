@@ -1,4 +1,4 @@
-# Kwadjo Sarpong Aqua Website
+# Kwadjo Sarpong Aquaponics Website
 
 This project showcases an interactive and educational website designed to highlight the concept of aquaponics and sustainable water systems. The website demonstrates a clean layout, multimedia integration, and responsive design principles using **HTML**, **CSS**, and **JavaScript**.
 
